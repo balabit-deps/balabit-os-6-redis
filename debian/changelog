@@ -1,3 +1,32 @@
+redis (2:3.0.6-1ubuntu0.2) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Permissions issue
+    - debian/patches/CVE-2013-7458.patch: fix in
+      deps/linenoise/linenoise.c.
+    - CVE-2013-7458
+  * SECURITY UPDATE: Cross protocol scripting
+    - debian/patches/CVE-2016-10517.patch: fix in
+      src/redis.c, src/redis.h.
+    - CVE-2016-10517
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2017-15047.patch: fix in
+      src/cluster.c.
+    - CVE-2017-15047
+  * SECURITY UPDATE: Memory corruption
+    - debian/patches/CVE-2018-11218.patch: fix in
+      deps/lua/src/lua_cmsgpack.c.
+    - CVE-2018-11218
+  * SECURITY UPDATE: Integer Overflow
+    - debian/patches/CVE-2018-11219-*.patch: fix in
+      deps/lua/src/lua_struct.c.
+    - CVE-2018-11219
+  * SECURITY UPDATE: Buffer overflow in the redis-cli
+    - debian/patches/CVE-2018-12326.patch: fix in
+      redis-cli.c.
+    - CVE-2018-12326
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Tue, 26 Jun 2018 17:12:39 -0300
+
 redis (2:3.0.6-1) unstable; urgency=medium
 
   * New upstream release.
