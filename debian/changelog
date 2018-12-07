@@ -1,3 +1,13 @@
+redis (2:3.0.6-1ubuntu0.3) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Tighten Permissions
+    - Ensure /var/lib/redis and /var/log/redis are not world readable
+    - Set UMask=007 in redis-server.service, redis-sentinel.server
+    - Changes taken from Debian version 3:3.2.5-2
+    - CVE-2016-2121
+
+ -- Mike Salvatore <mike.salvatore@canonical.com>  Fri, 07 Dec 2018 11:02:30 -0500
+
 redis (2:3.0.6-1ubuntu0.2) xenial-security; urgency=medium
 
   * SECURITY UPDATE: Permissions issue
