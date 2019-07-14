@@ -1,3 +1,11 @@
+redis (2:3.0.6-1ubuntu0.4) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: heap buffer overflows in Hyperloglog (Closes: #1836496)
+    - debian/patches/CVE-2019-10192.patch: Fix hyperloglog corruption
+    - CVE-2019-10192
+
+ -- Julian Andres Klode <juliank@ubuntu.com>  Sun, 14 Jul 2019 21:21:22 +0200
+
 redis (2:3.0.6-1ubuntu0.3) xenial-security; urgency=medium
 
   * SECURITY UPDATE: Tighten Permissions
